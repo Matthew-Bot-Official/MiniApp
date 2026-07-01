@@ -6,7 +6,7 @@ public class activator {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner (System.in);
+        Scanner input = new Scanner(System.in);
 
         String ProductKey1 = "G5H4S-T8DDV-P43CA-R4E8D-U09WZ";
         String ProductKey2 = "Z1X6C-V3B9N-M4K2L-P8Q5R-T7Y0J";
@@ -23,26 +23,8 @@ public class activator {
 
             String ProductKey = input.next();
 
-            try {
-                Thread.sleep(1500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
             System.out.println();
-            System.out.println("Connecting to authentication servers...");
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
             System.out.println("Validating Product Key...");
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
 
             if (ProductKey.equalsIgnoreCase(ProductKey1) ||
                     ProductKey.equalsIgnoreCase(ProductKey2) ||
@@ -51,50 +33,23 @@ public class activator {
                     ProductKey.equalsIgnoreCase(ProductKey5)) {
                 Launcher.activated = true;
                 Launcher.ProductKey = ProductKey;
+
                 System.out.println();
                 System.out.println("MiniApp has been successfully activated!");
                 System.out.println();
 
-                try {
-                    Thread.sleep(1500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 System.out.println("**Keep in mind that the activation will reset when you close the app**");
 
-                try {
-                    Thread.sleep(2500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 System.out.println("You will be now redirected to the main menu");
                 System.out.println();
 
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
                 Launcher.main(null);
                 return;
-            }
-
-            else {
+            } else {
                 System.out.println();
                 System.out.println("Failed to verify Product Key!");
                 System.out.println();
-
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
         }
     }
 }
-
-
-
-

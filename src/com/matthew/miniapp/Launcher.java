@@ -65,7 +65,7 @@ public class Launcher {
 
         System.out.println("MiniApp");
         System.out.println("~~~~~~~");
-        System.out.println("Version: 1.2");
+        System.out.println("Version: 1.3 Pre-Release 1");
 
         if (activated) {
             System.out.println("Status: Activated");
